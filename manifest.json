@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "prosmotretanime",
+  "version": "0.0.1",
+
+  "description": "Removes ads from smotretanime video player",
+  "icons": {
+      "48": "assets/img/icon48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "*://smotretanime.ru/*"
+      ],
+      "js": [
+        "src/prosmotretanime.js"
+      ]
+    }
+  ]
+}
